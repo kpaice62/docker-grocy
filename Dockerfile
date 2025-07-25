@@ -36,7 +36,7 @@ RUN \
   #  /tmp/grocy.tar.gz -L \
   #  "https://github.com/kpaice62/grocy/archive/${GROCY_RELEASE}.tar.gz" && \
   #tar xf /tmp/grocy.tar.gz -C /app/www/ --strip-components=1 && \
-  git clone git@github.com:kpaice62/grocy.git /app/www &&
+  git clone git@github.com:kpaice62/grocy.git /app/www && \
   cp -R /app/www/data/plugins /defaults/plugins && \
   echo "**** install composer packages ****" && \
   composer install -d /app/www --no-dev && \
